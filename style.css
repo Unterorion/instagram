@@ -1,15 +1,53 @@
 /*태그에 css 먹이기*/
-h2{
-    color:red;
-}
+h2{}
 
 /*클래스 에는 . 붙여주기*/
 .highlight{
+    padding:5px;
+}
+
+.highlight img{
     border:solid;
+    border-width:1px;
+    border-radius:50%;
+    border-color:grey;
+    padding:1px;
+
 }
 
 /*id에는 #*/
 #profile{
-    border:solid;
-    border-color:blue;
+    padding:5px;
+}
+
+#profile img{
+    border-radius:50%;
+}
+
+#profile button{
+    color:white;
+    background-color:#999999;
+    border-width:0px;
+    border-radius:8px;
+}
+
+#intro{}
+
+#status{
+    text-align:center;
+    border-top:solid grey 1px;
+    border-bottom:solid grey 1px;
+    margin-block:5px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+}
+
+.content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
 }
