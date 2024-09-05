@@ -3,7 +3,14 @@ h2{}
 
 /*클래스 에는 . 붙여주기*/
 .highlight{
-    padding:5px;
+    padding: 5px;
+    justify-content: start;
+}
+
+.hlbox{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .highlight img{
@@ -34,20 +41,28 @@ h2{}
 #intro{}
 
 #status{
-    text-align:center;
-    border-top:solid grey 1px;
-    border-bottom:solid grey 1px;
-    margin-block:5px;
+    text-align: center;
+    border-top: solid grey 1px;
+    border-bottom: solid grey 1px;
+    margin-block: 5px;
 }
 
 .grid{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items:center;
+    align-items: center;
+    justify-items: center;
 }
 
-.content{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items:center;
+.grid .imgbox{
+    position: relative;
+    aspect-ratio: 1/1;
+    padding: 1px;
+}
+
+.grid .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
