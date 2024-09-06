@@ -21,8 +21,8 @@ i{
 }
 
 .highlight img{
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 52px;
+    max-height: 52px;
     min-width: 40px;
     min-height: 40px;
     width: 13vw;
@@ -91,8 +91,8 @@ i{
 
 #icons_desktop{
     height: 20px;
-    width: 50%;
-    margin-inline: 25%;
+    width: 60%;
+    margin-inline: 20%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
