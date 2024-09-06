@@ -36,16 +36,7 @@ i{
 }
 
 /*id에는 #*/
-#upper_desktop{
-    padding-block: 10px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    border-bottom: solid grey 1px;
-}
-
-#upper_mobile{
+#upper{
     padding-block: 10px;
     margin-bottom: 50px;
     display: grid;
@@ -85,6 +76,10 @@ i{
 
 #intro{
     font-size: 13px;
+}
+
+#intro_link{
+    color: #0866ff;
 }
 
 #status{

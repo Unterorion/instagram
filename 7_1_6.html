@@ -5,28 +5,44 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <style>
-        @media(max-width:500px){
-            .desktop{display:none;}
-            .mobile{display:block;}
+        @media(max-width:500px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
         }
-        @media(min-width:500px){
-            .desktop{display:block;} 
-            .mobile{display:none;}
+
+        @media(min-width:500px) {
+            .desktop {
+                display: block;
+            }
+
+            .mobile {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
     <!--상단 바-->
-    <div id="upper_desktop" class="desktop">
-        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" style="margin-inline:10px">
-        <input type="search" value="검색">
-        <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+    <div class="desktop">
+        <div id="upper">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                style="margin-inline:10px">
+            <input type="search" value="검색">
+            <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+        </div>
     </div>
-    <div id="upper_mobile" class="mobile">
-        <i class="fab fa-instagram"></i>
-        <input type="search" value="검색">
-        <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+    <div class="mobile">
+        <div id="upper">
+            <i class="fab fa-instagram"></i>
+            <input type="search" value="검색">
+            <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+        </div>
     </div>
 
     <!--프로필 영역-->
@@ -47,9 +63,8 @@
             <strong>김용진</strong><br />
             ᰔ<br>
         </p>
-        <p>
-            <i class="fa-brands fa-facebook"></i>
-            <a href="https://www.facebook.com/yongjin.kim.5895/">Facebook 프로필</a>
+        <p id="intro_link">
+            <a href="https://www.facebook.com/yongjin.kim.5895/"><i class="fab fa-facebook"></i> Facebook 프로필</a>
         </p>
     </div>
 
