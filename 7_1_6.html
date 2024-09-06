@@ -3,21 +3,42 @@
 <head>
     <!--css파일 불러오기-->
     <link href="style.css" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <style>
+        @media(max-width:500px){
+            .desktop{display:none;}
+            .mobile{display:block;}
+        }
+        @media(min-width:500px){
+            .desktop{display:block;} 
+            .mobile{display:none;}
+        }
+    </style>
 </head>
 
 <body>
     <!--상단 바-->
-    <div>
-        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+    <div id="upper_desktop" class="desktop">
+        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" style="margin-inline:10px">
         <input type="search" value="검색">
+        <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+    </div>
+    <div id="upper_mobile" class="mobile">
+        <i class="fab fa-instagram"></i>
+        <input type="search" value="검색">
+        <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
     </div>
 
     <!--프로필 영역-->
-    <div id="profile">
-        <img src="image/profile.jpg" height="75px">
-        <h2>unter.orion_kyj</h2>
-        <button>프로필 편집</button>
-        <button>보관된 스토리 보기</button>
+    <div id="profile" style="align-items: center">
+        <img src="image/profile.jpg">
+        <div id="profile_info">
+            <h2 style="margin-block:10px">unter.orion_kyj</h2>
+            <div>
+                <button>프로필 편집</button>
+                <button>보관된 스토리 보기</button>
+            </div>
+        </div>
     </div>
 
     <!--소개 영역-->
@@ -27,13 +48,14 @@
             ᰔ<br>
         </p>
         <p>
+            <i class="fa-brands fa-facebook"></i>
             <a href="https://www.facebook.com/yongjin.kim.5895/">Facebook 프로필</a>
         </p>
     </div>
 
     <!--하이라이트-->
     <div>
-        <div class="highlight" style="margin-bottom: 65px">
+        <div class="highlight">
             <div class="hlbox" style="float:left">
                 <div>
                     <img src="image/highlight.jfif" height="35px">
@@ -46,7 +68,7 @@
     </div>
 
     <!--상태 표시줄-->
-    <div id="status" class="grid" style="clear:left">
+    <div id="status" class="grid" style="clear:left;">
         <div>
             <p>
                 게시물<br>
@@ -67,7 +89,18 @@
     </div>
 
     <!--아이콘-->
-    <div></div>
+    <div class="mobile" id="icons_mobile">
+        <i class="fas fa-border-all"></i>
+        <i class="far fa-play-circle"></i>
+        <i class="far fa-bookmark"></i>
+        <i class="fas fa-user-tag"></i>
+    </div>
+    <div class="desktop" id="icons_desktop">
+        <i class="fas fa-border-all"></i>
+        <i class="far fa-play-circle"></i>
+        <i class="far fa-bookmark"></i>
+        <i class="fas fa-user-tag"></i>
+    </div>
 
     <!--게시물 썸네일-->
     <div class="grid">

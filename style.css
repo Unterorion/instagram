@@ -1,19 +1,32 @@
 /*태그에 css 먹이기*/
 h2{}
 
+i{
+    color:grey;
+}
+
 /*클래스 에는 . 붙여주기*/
 .highlight{
+    margin-bottom: 65px;
     padding: 5px;
     width: 100%;
+    font-size: 12px;
 }
 
 .hlbox{
-    margin: 0 auto;
+    margin-bottom: 20px;
     text-align: center;
     width: 60px;
+    min-height: 80px;
 }
 
 .highlight img{
+    max-width: 60px;
+    max-height: 60px;
+    min-width: 40px;
+    min-height: 40px;
+    width: 13vw;
+    height: 13vw;
     border:solid;
     border-width:1px;
     border-radius:50%;
@@ -23,14 +36,46 @@ h2{}
 }
 
 /*id에는 #*/
+#upper_desktop{
+    padding-block: 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-bottom: solid grey 1px;
+}
+
+#upper_mobile{
+    padding-block: 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-bottom: solid grey 1px;
+}
+
 #profile{
     padding:5px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
 }
 
 #profile img{
+    min-height: 60px;
+    max-height: 100px;
+    min-width: 60px;
+    max-width: 100px;
+    height: 15vw;
+    width: 15vw;
     border-radius:50%;
 }
 
+#profile_info{
+    height: 80px;
+    display: grid;
+    grid-template-rows: 40px 40px;
+    align-items: center;
+}
 #profile button{
     color:white;
     background-color:#999999;
@@ -38,7 +83,9 @@ h2{}
     border-radius:8px;
 }
 
-#intro{}
+#intro{
+    font-size: 13px;
+}
 
 #status{
     text-align: center;
@@ -47,17 +94,35 @@ h2{}
     margin-block: 5px;
 }
 
+#icons_desktop{
+    height: 20px;
+    width: 50%;
+    margin-inline: 25%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#icons_mobile{
+    height: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    align-items: stretch;
+    justify-items: stretch;
 }
 
 .grid .imgbox{
     position: relative;
     aspect-ratio: 1/1;
-    padding: 1px;
+    padding: 2px;
 }
 
 .grid .imgbox img{
