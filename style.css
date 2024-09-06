@@ -4,13 +4,13 @@ h2{}
 /*클래스 에는 . 붙여주기*/
 .highlight{
     padding: 5px;
-    justify-content: start;
+    width: 100%;
 }
 
 .hlbox{
     margin: 0 auto;
     text-align: center;
-    justify-content: center;
+    width: 60px;
 }
 
 .highlight img{
