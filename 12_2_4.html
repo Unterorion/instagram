@@ -1,0 +1,9 @@
+<script>
+    function red(){
+        let button = document.querySelector("input") /*선택자 안에 태그, 클래스, id 모두 가능*/
+        button.style.backgroundColor="red"
+    }
+</script>
+
+<input type="button" value="Button1" onClick="red()">
+<input type="button" value="Button2" onClick="red()"> <!--첫번째 input 태그에만 함수 적용-->>
