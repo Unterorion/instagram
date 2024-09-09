@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded",
 
         profilePic.addEventListener("mouseover",
             function (e) {
-                e.target.style.filter = "grayscale(100%)"
+                e.target.style.filter = "grayscale(50%)"
             }
         )
 
