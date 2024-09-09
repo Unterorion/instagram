@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <!--css파일 불러오기-->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <style>
+        @media(max-width:500px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+        }
+
+        @media(min-width:500px) {
+            .desktop {
+                display: block;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <!--상단 바-->
+    <div class="desktop">
+        <div id="upper">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                style="margin-inline:10px">
+            <input type="search" value="검색">
+            <i id="id" class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+        </div>
+    </div>
+    <div class="mobile">
+        <div id="upper">
+            <i class="fab fa-instagram"></i>
+            <input type="search" value="검색">
+            <i class="fas fa-cog" style="justify-self:end; margin-right: 10px"></i>
+        </div>
+    </div>
+
+    <!--프로필 영역-->
+    <div id="profile" style="align-items: center">
+        <img src="image/profile.jpg">
+        <div id="profile_info">
+            <h2 style="margin-block:10px">unter.orion_kyj</h2>
+            <div>
+                <button id="editProfile">프로필 편집</button>
+                <button>보관된 스토리 보기</button>
+            </div>
+        </div>
+    </div>
+
+    <!--소개 영역-->
+    <div id="intro">
+        <p id="name">
+            <strong>김용진</strong>
+        </p>
+        <p id="profileText">
+            ᰔ
+        </p>
+        <p id="introLink">
+            <a href="https://www.facebook.com/yongjin.kim.5895/"><i class="fab fa-facebook"></i> Facebook 프로필</a>
+        </p>
+    </div>
+
+    <!--하이라이트-->
+    <div>
+        <div class="highlight">
+            <div class="hlbox" style="float:left">
+                <div>
+                    <img src="image/highlight.jfif" height="35px">
+                </div>
+                <div>
+                    Sapporo
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--상태 표시줄-->
+    <div id="status" class="grid" style="clear:left;">
+        <div>
+            <p>
+                게시물<br>
+                <strong>32</strong>
+            </p>
+        </div>
+        <div>
+            <p>
+                팔로워<br>
+                <strong>146</strong>
+            </p>
+        </div>
+        <div>
+            <p>
+                팔로우<br><strong>170</strong>
+            </p>
+        </div>
+    </div>
+
+    <!--아이콘-->
+    <div class="mobile">
+        <div id="icons_mobile">
+            <i class="fas fa-border-all"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-user-tag"></i>
+        </div>
+    </div>
+    <div class="desktop">
+        <div id="icons_desktop">
+            <i class="fas fa-border-all"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="far fa-bookmark"></i>
+            <i class="fas fa-user-tag"></i>
+        </div>
+    </div>
+
+    <!--게시물 썸네일-->
+    <div class="grid">
+        <div class="imgbox">
+            <img src="image/thumb1.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb2.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb3.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb4.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb5.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb6.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb7.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb8.jpg">
+        </div>
+        <div class="imgbox">
+            <img src="image/thumb9.webp">
+        </div>
+    </div>
+</body>
+
+</html>
